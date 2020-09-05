@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<ArrayOfItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Item xsi:type="Tire">
+    <NameItem>1</NameItem>
+    <NumberItem>1</NumberItem>
+    <CostItem>200</CostItem>
+    <WeightItem>30</WeightItem>
+    <Quantity>1</Quantity>
+    <TireName>1</TireName>
+    <DiameterName>1</DiameterName>
+  </Item>
+  <Item xsi:type="Battery">
+    <NameItem>1</NameItem>
+    <NumberItem>2</NumberItem>
+    <CostItem>100</CostItem>
+    <WeightItem>10</WeightItem>
+    <Quantity>1</Quantity>
+    <Voltage>1</Voltage>
+  </Item>
+  <Item xsi:type="Wind">
+    <NameItem>3</NameItem>
+    <NumberItem>3</NumberItem>
+    <CostItem>15</CostItem>
+    <WeightItem>1</WeightItem>
+    <Quantity>3</Quantity>
+    <Wiper>3</Wiper>
+  </Item>
+</ArrayOfItem>

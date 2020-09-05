@@ -1,0 +1,14 @@
+C:\Users\Eric\source\repos\enFinalExam\enFinalExam\obj\Debug\enFinalExam.csprojAssemblyReference.cache
+C:\Users\Eric\source\repos\enFinalExam\enFinalExam\obj\Debug\MainWindow.g.cs
+C:\Users\Eric\source\repos\enFinalExam\enFinalExam\obj\Debug\App.g.cs
+C:\Users\Eric\source\repos\enFinalExam\enFinalExam\obj\Debug\enFinalExam_MarkupCompile.cache
+C:\Users\Eric\source\repos\enFinalExam\enFinalExam\obj\Debug\enFinalExam_MarkupCompile.lref
+C:\Users\Eric\source\repos\enFinalExam\enFinalExam\bin\Debug\enFinalExam.exe.config
+C:\Users\Eric\source\repos\enFinalExam\enFinalExam\bin\Debug\enFinalExam.exe
+C:\Users\Eric\source\repos\enFinalExam\enFinalExam\bin\Debug\enFinalExam.pdb
+C:\Users\Eric\source\repos\enFinalExam\enFinalExam\obj\Debug\MainWindow.baml
+C:\Users\Eric\source\repos\enFinalExam\enFinalExam\obj\Debug\enFinalExam.g.resources
+C:\Users\Eric\source\repos\enFinalExam\enFinalExam\obj\Debug\enFinalExam.Properties.Resources.resources
+C:\Users\Eric\source\repos\enFinalExam\enFinalExam\obj\Debug\enFinalExam.csproj.GenerateResource.cache
+C:\Users\Eric\source\repos\enFinalExam\enFinalExam\obj\Debug\enFinalExam.exe
+C:\Users\Eric\source\repos\enFinalExam\enFinalExam\obj\Debug\enFinalExam.pdb

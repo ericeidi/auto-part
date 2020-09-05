@@ -1,0 +1,75 @@
+﻿<Window x:Class="enFinalExam.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:enFinalExam"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid RenderTransformOrigin="0.508,0.495">
+        <Button x:Name="tireBtn" Visibility="Hidden" Content="Tire" HorizontalAlignment="Left" Margin="27,129,0,0" VerticalAlignment="Top" Width="221" Height="180" Click="tireBtn_Click"/>
+        <Button x:Name="batteryBtn" Visibility="Hidden" Content="Battery" HorizontalAlignment="Left" Margin="285,129,0,0" VerticalAlignment="Top" Width="221" Height="180" Click="BatteryBtn_Click"/>
+        <Button x:Name="windBtn" Visibility="Hidden" Content="Windshield wipers" HorizontalAlignment="Left" Margin="545,129,0,0" VerticalAlignment="Top" Width="221" Height="180" Click="WindBtn_Click"/>
+        <Button x:Name="myOrderBtn" Content="My orders" HorizontalAlignment="Left" Margin="244,34,0,0" VerticalAlignment="Top" Width="172" Click="myOrderBtn_Click" Height="54"/>
+        <Button x:Name="buyItemsBtn" Content="Buy Items" HorizontalAlignment="Left" Margin="41,32,0,0" VerticalAlignment="Top" Width="177" Height="56" Click="buyItemsBtn_Click"/>
+
+        <TextBox x:Name="itemNameTxt"  Visibility="Hidden" HorizontalAlignment="Left" Height="23" Margin="134,201,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tireNameTxt" Visibility="Hidden" HorizontalAlignment="Left" Height="23" Margin="134,276,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="diameterNameTxt" Visibility="Hidden" HorizontalAlignment="Left" Height="23" Margin="133,318,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="diameterName_TextChanged"/>
+        <Label x:Name="numberItemTireLbl" Visibility="Hidden" Content="1" HorizontalAlignment="Left" Margin="443,226,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.438,0.617"/>
+        <Label x:Name="costItemTireLbl" Visibility="Hidden" Content="$200" HorizontalAlignment="Left" Margin="436,257,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.598,0.617"/>
+        <Label x:Name="weightItemTireLbl"  Visibility="Hidden" Content="30Kgs"  HorizontalAlignment="Left" Margin="438,297,0,0" VerticalAlignment="Top" Width="50"/>
+        <Button x:Name="orderTireBtn" Visibility="Hidden" Content="Add to orders" HorizontalAlignment="Left" Margin="72,368,0,0" VerticalAlignment="Top" Width="183" Click="orderTireBtn_Click"/>
+        <Label x:Name="itemNameLbl" Visibility="Hidden" Content="Item Name" HorizontalAlignment="Left" Margin="48,197,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="diameterNamelbl" Visibility="Hidden" Content="Diameter" HorizontalAlignment="Left" Margin="59,317,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="tireNameLbl" Visibility="Hidden" Content="Tire name model" HorizontalAlignment="Left" Margin="14,271,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="itemNumberLbl" Visibility="Hidden" Content="Item Number" HorizontalAlignment="Left" Margin="342,224,0,0" VerticalAlignment="Top" Width="88"/>
+        <Label x:Name="priceLbl" Visibility="Hidden" Content="Price" HorizontalAlignment="Left" Margin="344,257,0,0" VerticalAlignment="Top" Width="88"/>
+        <Label x:Name="weightLbl" Visibility="Hidden" Content="Weight" HorizontalAlignment="Left" Margin="345,295,0,0" VerticalAlignment="Top" Width="88"/>
+        <Label x:Name="tireTitleLbl" Visibility="Hidden" Content="Tire" HorizontalAlignment="Left" Margin="196,133,0,0" VerticalAlignment="Top" Width="134" Height="47" VerticalContentAlignment="Center" Padding="5,5,4,5" HorizontalContentAlignment="Center" FontSize="24"/>
+        <Label x:Name="quantityLbl" Visibility="Hidden" Content="Quantity" HorizontalAlignment="Left" Margin="48,239,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="quantityTxt" Visibility="Hidden" HorizontalAlignment="Left" Height="23" Margin="134,0,0,156" TextWrapping="Wrap" Text="" VerticalAlignment="Bottom" Width="120"/>
+
+        <TextBox x:Name="itemNameBatteryTxt"  Visibility="Hidden"  HorizontalAlignment="Left" Height="23" Margin="134,201,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="voltageNameTxt"  Visibility="Hidden" HorizontalAlignment="Left" Height="23" Margin="133,318,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="diameterName_TextChanged"/>
+        <Label x:Name="numberItemBatteryLbl"  Visibility="Hidden" Content="2" HorizontalAlignment="Left" Margin="443,226,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.438,0.617"/>
+        <Label x:Name="costItemBatteryLbl"  Visibility="Hidden" Content="$100" HorizontalAlignment="Left" Margin="436,257,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.598,0.617"/>
+        <Label x:Name="weightItemBatteryLbl"  Visibility="Hidden"  Content="10Kgs" HorizontalAlignment="Left" Margin="438,297,0,0" VerticalAlignment="Top" Width="47"/>
+        <Button x:Name="orderBatteryBtn"  Visibility="Hidden" Content="Add to orders" HorizontalAlignment="Left" Margin="72,368,0,0" VerticalAlignment="Top" Width="183" Click="orderBatteryBtn_Click"/>
+        <Label x:Name="itemNameBatteryLbl"  Visibility="Hidden" Content="Item Name" HorizontalAlignment="Left" Margin="48,197,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="voltageNamelbl"  Visibility="Hidden" Content="Voltage" HorizontalAlignment="Left" Margin="56,315,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="itemNumberBatteryLbl"  Visibility="Hidden" Content="Item Number" HorizontalAlignment="Left" Margin="342,224,0,0" VerticalAlignment="Top" Width="88"/>
+        <Label x:Name="priceBatteryLbl"  Visibility="Hidden" Content="Price" HorizontalAlignment="Left" Margin="344,257,0,0" VerticalAlignment="Top" Width="88"/>
+        <Label x:Name="weightBatteryLbl"  Visibility="Hidden" Content="Weight" HorizontalAlignment="Left" Margin="345,295,0,0" VerticalAlignment="Top" Width="88"/>
+        <Label x:Name="batteryTitleLbl"  Visibility="Hidden" Content="Battery" HorizontalAlignment="Left" Margin="196,133,0,0" VerticalAlignment="Top" Width="134" Height="47" VerticalContentAlignment="Center" Padding="5,5,4,5" HorizontalContentAlignment="Center" FontSize="24"/>
+        <Label x:Name="quantityBatteryLbl"  Visibility="Hidden" Content="Quantity" HorizontalAlignment="Left" Margin="52,259,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="quantityBatteryTxt"  Visibility="Hidden" HorizontalAlignment="Left" Height="23" Margin="132,0,0,137" TextWrapping="Wrap" Text="" VerticalAlignment="Bottom" Width="120" TextChanged="quantityBatteryTxt_TextChanged"/>
+
+        <TextBox x:Name="itemNameWindTxt"  Visibility="Hidden"  HorizontalAlignment="Left" Height="23" Margin="134,201,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="wiperNameTxt" Visibility="Hidden" HorizontalAlignment="Left" Height="23" Margin="133,318,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="diameterName_TextChanged"/>
+        <Label x:Name="numberItemWindLbl" Visibility="Hidden"  Content="3" HorizontalAlignment="Left" Margin="443,226,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.438,0.617"/>
+        <Label x:Name="costItemWindLbl" Visibility="Hidden"  Content="$15" HorizontalAlignment="Left" Margin="436,257,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.598,0.617"/>
+        <Label x:Name="weightItemWindLbl"  Visibility="Hidden" Content="1Kg" HorizontalAlignment="Left" Margin="438,297,0,0" VerticalAlignment="Top" Width="31"/>
+        <Button x:Name="orderWindBtn" Visibility="Hidden" Content="Add to orders" HorizontalAlignment="Left" Margin="72,368,0,0" VerticalAlignment="Top" Width="183" Click="orderWindBtn_Click"/>
+        <Label x:Name="itemNameWindLbl" Visibility="Hidden"  Content="Item Name" HorizontalAlignment="Left" Margin="48,197,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="wiperNamelbl" Visibility="Hidden"  Content="Lenght" HorizontalAlignment="Left" Margin="56,315,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="itemNumberWindLbl" Visibility="Hidden"  Content="Item Number" HorizontalAlignment="Left" Margin="342,224,0,0" VerticalAlignment="Top" Width="88"/>
+        <Label x:Name="priceWindLbl" Visibility="Hidden"  Content="Price" HorizontalAlignment="Left" Margin="344,257,0,0" VerticalAlignment="Top" Width="88"/>
+        <Label x:Name="weightWindLbl"  Visibility="Hidden" Content="Weight" HorizontalAlignment="Left" Margin="345,295,0,0" VerticalAlignment="Top" Width="88"/>
+        <Label x:Name="windTitleLbl" Visibility="Hidden"  Content="Windshield wipers" HorizontalAlignment="Left" Margin="101,133,0,0" VerticalAlignment="Top" Width="229" Height="47" VerticalContentAlignment="Center" Padding="5,5,4,5" HorizontalContentAlignment="Center" FontSize="24"/>
+        <Label x:Name="quantityWindLbl" Visibility="Hidden"  Content="Quantity" HorizontalAlignment="Left" Margin="52,259,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="quantityWindTxt" Visibility="Hidden"  HorizontalAlignment="Left" Height="23" Margin="132,0,0,137" TextWrapping="Wrap" Text="" VerticalAlignment="Bottom" Width="120"/>
+
+
+        <DataGrid x:Name="dataGrid1" Visibility="Hidden" HorizontalAlignment="Left" Height="182" Margin="42,154,0,0" VerticalAlignment="Top" Width="527" RenderTransformOrigin="0.446,0.513"/>
+        <Label x:Name="totalLbl" Visibility="Hidden" Content="" HorizontalAlignment="Left" Margin="713,364,0,0" VerticalAlignment="Top" Width="64"/>
+        <Label x:Name="totalNameLbl" Content="Total" Visibility="Hidden" HorizontalAlignment="Left" Margin="656,363,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.51,-0.281"/>
+        <CheckBox x:Name="checkShipItem" Visibility="Hidden" Content="Shipping to home" HorizontalAlignment="Left" Margin="348,340,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnSave" Content="Save" Visibility="Hidden" HorizontalAlignment="Left" Margin="701,116,0,0" VerticalAlignment="Top" Width="75" Click="Btn_Save_Click"/>
+        <Button x:Name="btnLoad" Content="Load" Visibility="Hidden" HorizontalAlignment="Left" Margin="700,156,0,0" VerticalAlignment="Top" Width="75" Click="Btn_Load_Click"/>
+
+
+
+
+    </Grid>
+</Window>
